@@ -24,7 +24,7 @@ services:
         dns:
             - 10.0.0.100
         volumes:
-            - ./drone:/data
+            - ./data:/data
     runner:
         container_name: drone_runner
         image: drone/drone-runner-docker:1

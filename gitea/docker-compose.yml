@@ -20,6 +20,6 @@ services:
         dns:
             - 10.0.0.100
         volumes:
-            - ./gitea:/data
+            - ./data:/data
             - /etc/timezone:/etc/timezone:ro
             - /etc/localtime:/etc/localtime:ro
