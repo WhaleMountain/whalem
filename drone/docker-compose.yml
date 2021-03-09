@@ -12,9 +12,9 @@ services:
         restart: always
         environment:
             - DRONE_GITEA_SERVER=http://gitea.whalem.net
-            - DRONE_GITEA_CLIENT_ID=f05caa75-51a6-4199-9408-9d28fa7b711b
-            - DRONE_GITEA_CLIENT_SECRET=35fIDCg9uFO0sRuRLwQjx953ij0-EzEETMS-6kxcIhA=
-            - DRONE_RPC_SECRET=5c1cedf202ba40df1b04caf9d891029a
+            - DRONE_GITEA_CLIENT_ID=
+            - DRONE_GITEA_CLIENT_SECRET=
+            - DRONE_RPC_SECRET=
             - DRONE_SERVER_HOST=drone.whalem.net
             - DRONE_SERVER_PROTO=http
             - DRONE_RUNNER_NETWORKS=whale_bridge
@@ -38,7 +38,7 @@ services:
         environment:
             - DRONE_RPC_PROTO=http
             - DRONE_RPC_HOST=drone.whalem.net
-            - DRONE_RPC_SECRET=5c1cedf202ba40df1b04caf9d891029a
+            - DRONE_RPC_SECRET=
             - DRONE_RUNNER_CAPACITY=2
             - DRONE_RUNNER_NAME=whale
         volumes:
