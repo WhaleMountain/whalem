@@ -17,7 +17,8 @@ services:
             - DRONE_RPC_SECRET=
             - DRONE_SERVER_HOST=drone.whalem.net
             - DRONE_SERVER_PROTO=http
-            - DRONE_RUNNER_NETWORKS=whale_bridge
+            - DRONE_USER_CREATE=
+            - DRONE_NETWORK=whale_bridge
         networks:
             whale:
                 ipv4_address: 10.0.0.130
@@ -41,5 +42,7 @@ services:
             - DRONE_RPC_SECRET=
             - DRONE_RUNNER_CAPACITY=2
             - DRONE_RUNNER_NAME=whale
+            - DRONE_RUNNER_NETWORKS=whale_bridge
+            - DRONE_RUNNER_VOLUMES=
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock
