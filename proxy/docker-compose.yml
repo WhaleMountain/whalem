@@ -1,0 +1,25 @@
+version: "3.5"
+
+networks:
+    local:
+        external:
+            name: "local_net"
+    whale:
+        external:
+            name: "whale_bridge"
+
+services:
+  nginx:
+    container_name: proxy
+    image: nginx:1.19.2
+    restart: always
+    dns: 10.0.0.100
+    networks:
+        local:
+            ipv4_address: 192.168.0.250
+        whale:
+            ipv4_address: 10.0.0.110
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./logs:/var/log/nginx

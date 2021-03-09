@@ -1,0 +1,45 @@
+version: "3.5"
+
+networks:
+    whale:
+        external:
+            name: "whale_bridge"
+
+services:
+    server:
+        container_name: drone_server
+        image: drone/drone:1
+        restart: always
+        environment:
+            - DRONE_GITEA_SERVER=http://gitea.whalem.net
+            - DRONE_GITEA_CLIENT_ID=f05caa75-51a6-4199-9408-9d28fa7b711b
+            - DRONE_GITEA_CLIENT_SECRET=35fIDCg9uFO0sRuRLwQjx953ij0-EzEETMS-6kxcIhA=
+            - DRONE_RPC_SECRET=5c1cedf202ba40df1b04caf9d891029a
+            - DRONE_SERVER_HOST=drone.whalem.net
+            - DRONE_SERVER_PROTO=http
+            - DRONE_RUNNER_NETWORKS=whale_bridge
+        networks:
+            whale:
+                ipv4_address: 10.0.0.130
+        dns:
+            - 10.0.0.100
+        volumes:
+            - ./drone:/data
+    runner:
+        container_name: drone_runner
+        image: drone/drone-runner-docker:1
+        restart: always
+        depends_on:
+            - server
+        dns:
+            - 10.0.0.100
+        networks:
+            - whale
+        environment:
+            - DRONE_RPC_PROTO=http
+            - DRONE_RPC_HOST=drone.whalem.net
+            - DRONE_RPC_SECRET=5c1cedf202ba40df1b04caf9d891029a
+            - DRONE_RUNNER_CAPACITY=2
+            - DRONE_RUNNER_NAME=whale
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
