@@ -8,8 +8,13 @@ networks:
 services:
     server:
         container_name: "whale_dns"
+        build: ./unbound-docker/1.13.1
         image: unbound
         restart: always
+        logging:
+            options:
+                max-file: "5"
+                max-size: "10m"
         networks:
             whale:
                 ipv4_address: 10.0.0.100
