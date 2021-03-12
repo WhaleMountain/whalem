@@ -1,0 +1,33 @@
+---
+- name: install requirements
+  become: yes
+  apt:
+    name:
+      - curl
+      - git
+    state: latest
+
+- name: get install shell
+  become: yes
+  get_url:
+    url: https://get.docker.com
+    dest: /root/install-docker.sh
+    mode: ''
+
+- name: install docker
+  become: yes
+  command: sh install-docker.sh
+  args:
+    chdir: /root/
+
+- name: get docker-compose repo
+  become: yes
+  git:
+    repo: 'https://github.com/docker/compose.git'
+    dest: /root/compose
+
+- name: install docker-compose
+  become: yes
+  command: ./script/build/linux
+  args:
+    chdir: /root/compose/

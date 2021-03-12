@@ -1,0 +1,5 @@
+- hosts: raspi
+  user: mk
+
+  roles:
+    - install_docker
