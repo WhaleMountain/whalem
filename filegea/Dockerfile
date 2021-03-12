@@ -9,6 +9,11 @@ FROM alpine:3.12
 
 RUN mkdir -p /opt/filegea/Data
 COPY --from=build /tmp/filegea/filegea /opt/filegea/filegea
+COPY --from=build /tmp/filegea/config.toml /opt/filegea/config.toml
+
+RUN addgroup -S -g 1001 filegea && \
+    adduser -S filegea -g filegea --uid 1001 && \
+    chown filegea:filegea -R /opt/filegea
 
 USER filegea
 
