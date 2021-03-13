@@ -17,4 +17,4 @@ services:
         dns:
             - 10.0.0.100
         volumes:
-            - ./Data:/data
+            - ./Data:/opt/filegea/Data
