@@ -19,7 +19,4 @@ services:
             whale:
                 ipv4_address: 10.0.0.100
         volumes:
-            - type: bind
-              source: /home/mk/whalemountain/unbound/records/a-records.conf
-              target: /opt/unbound/etc/unbound/a-records.conf
-              read_only: true
+            - ./records/a-records.conf:/opt/unbound/etc/unbound/a-records.conf:ro
