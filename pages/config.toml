@@ -1,0 +1,64 @@
+baseurl = "http://whalem.net/"
+languageCode = "jp"
+title = "Whale Mountain"
+theme = "hugo-theme-yuki"
+author = "Whale Mountain"
+
+# Copyright notice. This will display on the footer.
+copyright = "© 2021 Whale Mountain. Theme yuki. Powered by Hugo."
+paginate = 10
+
+enableGitInfo = true
+enableRobotsTXT = true
+
+# Theme config
+[params]
+
+  # The content you want to be listed on list pages.
+  mainSections = ["post"]
+
+  # The information will display on the post pages.
+  author = "Whale Mountain"
+  description = "Tofu on fire :)"
+  authorwebsite = "http://whalem.net/"
+
+  # The path to your images
+  favicon = "images/wm.png"
+  logo = "images/wm.png"
+  avatar = "https://avatars.githubusercontent.com/u/33239408?s=460&u=e42f33454abd96a2add42e436aa64421a0591d00&v=4"
+  displayImg = "images/back.jpg"
+
+  # This will display on the index page
+  snsTitle = "Social"
+
+# Navbar config
+[[menu.nav]]
+    name = "HOME"
+    url = "/"
+    weight = 1
+
+[[menu.nav]]
+    name = "POST"
+    url = "/post"
+    weight = 2
+
+[[menu.nav]]
+    name = "ABOUT"
+    url = "/about"
+    weight = 3
+
+[[menu.nav]]
+    name = "TAGS"
+    url = "/tags/"
+    weight = 4
+
+# Social accounts config (This will display on the index page)
+[[menu.social]]
+    name = "Twitter"
+    url = "https://twitter.com/Whale_Mountain"
+    weight = 1
+
+[[menu.social]]
+    name = "GitHub"
+    url = "https://github.com/WhaleMountain"
+    weight = 2

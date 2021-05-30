@@ -1,1 +1,1 @@
-# [whalem](http://whalem.net)
+# [whalem.net](http://whalem.net)

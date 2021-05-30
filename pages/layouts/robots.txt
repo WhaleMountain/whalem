@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+User-agent: *-Image
+Disallow: /
+
+User-agent: *-image
+Disallow: /
+
+Sitemap: http://whalem.net/sitemap.xml

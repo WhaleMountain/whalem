@@ -1,3 +1,6 @@
-[submodule "unbound/unbound-docker"]
+[submodule "pages/themes/hugo-theme-yuki"]
+	path = pages/themes/hugo-theme-yuki
+	url = https://github.com/WhaleMountain/hugo-theme-yuki.git
+[submodule "raspi/unbound/unbound-docker"]
 	path = unbound/unbound-docker
 	url = git@github.com:MatthewVance/unbound-docker.git
