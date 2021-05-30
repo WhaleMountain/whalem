@@ -13,6 +13,16 @@ Raspberry Pi から Github Pages に移行しました！
 - Hugo
   - Theme, [hugo-theme-yuki](https://github.com/WhaleMountain/hugo-theme-yuki)
 
+
+## 配信の流れ
+
+1. Githubにプッシュする
+1. Github ActionでHugoビルドする
+1. Github Pagesで配信する
+1. 以上
+
+---
+
 ## 旧構成
 
 - Server
@@ -28,7 +38,7 @@ Raspberry Pi から Github Pages に移行しました！
 - Hugo theme
   - [hugo-theme-yuki](https://github.com/WhaleMountain/hugo-theme-yuki)
 
-## 配信の流れ
+## 旧構成の配信の流れ
 
 1. Giteaにプッシュする
 2. DroneでHuboビルドする
