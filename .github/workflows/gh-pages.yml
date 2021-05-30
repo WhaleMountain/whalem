@@ -27,8 +27,7 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
         with: 
           external_repository: WhaleMountain/WhaleMountain.github.io
-          github_token: ${{ secrets.ACTIONS_PAGE_DEPLOY_KEY }}
           publish_branch: main
+          deploy_key: ${{ secrets.ACTIONS_PAGE_DEPLOY_KEY }}
