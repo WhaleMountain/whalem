@@ -5,7 +5,15 @@ date: 2021-03-09T21:10:32+09:00
 
 自分用のWiki的なやつを書く。
 
-## 構成
+Raspberry Pi から Github Pages に移行しました！
+
+## 新構成
+
+- Github Pages
+- Hugo
+  - Theme, [hugo-theme-yuki](https://github.com/WhaleMountain/hugo-theme-yuki)
+
+## 旧構成
 
 - Server
   - Raspberry Pi 3B+
