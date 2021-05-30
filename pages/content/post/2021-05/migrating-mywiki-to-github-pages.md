@@ -7,13 +7,14 @@ tags: ["2021-05", "Github Pages", "Hugo"]
 #### 移行
 
 ラズパイの`Docker`で自分用のWikiを動かしていたが、Github Pagesの誘惑に負けたので移行する。
+
 Github Pagesの公開用のリポジトリと、ソース用のリポジトリを分けて作成しているが、個人的にこの構成が好きだからで、特に深い意味はありません。
 
 #### 手順
 
-1. `Username.github.io`のリポジトリを作成する
+1. **Username.github.io** のリポジトリを作成する
 1. 上で作成したリポジトリに[Deploy Key](https://docs.github.com/ja/developers/overview/managing-deploy-keys#デプロイキー)を設定する
-1. 次にHugoなどの`.md`ファイルを置くリポジトリを作成する
+1. 次にHugoなどの **.md** ファイルを置くリポジトリを作成する
 1. 1で作成したリポジトリにPushするために[Secret Key](https://docs.github.com/ja/actions/reference/encrypted-secrets#リポジトリの暗号化されたシークレットの作成)を設定する
 1. Github Actionを設定し終了
 
@@ -22,6 +23,7 @@ Github Pagesの公開用のリポジトリと、ソース用のリポジトリ�
 #### Github Action
 
 Hugo公式の[Host on Github](https://gohugo.io/hosting-and-deployment/hosting-on-github/)を参考に作成する。
+
 
 ```yaml
 
@@ -65,4 +67,9 @@ jobs:
 ```
 
 `paths`を設定することで、設定したパス(`pages/**`)に変更があった場合にGithub Actionが動くようになる。(参考: [GitHub Actionsのワークフロー構文](https://docs.github.com/ja/actions/reference/workflow-syntax-for-github-actions))
+
 また、ソース用のリポジトリに旧構成のバックアップがあるため、Build時にHugoのソースがあるディレクトリに`working-directory`で移動する。
+
+#### Reference
+
+* [Hugo + GitHub Pages + GitHub Actions で独自ドメインのウェブサイトを構築する](https://zenn.dev/nikaera/articles/hugo-github-actions-for-github-pages)
