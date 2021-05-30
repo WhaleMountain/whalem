@@ -32,4 +32,4 @@ jobs:
           publish_branch: main
           publish_dir: ./pages/public
           deploy_key: ${{ secrets.ACTIONS_PAGE_DEPLOY_KEY }}
-          cname: www.whalem.net
+          cname: whalem.net
