@@ -6,8 +6,7 @@ tags: ["2021-05", "Github Pages", "Hugo"]
 
 #### 移行
 
-ラズパイの`Docker`で自分用のWikiを動かしていたが、Github Pagesの誘惑に負けたので移行する。
-
+ラズパイの`Docker`で自分用のWikiを動かしていたが、Github Pagesの誘惑に負けたので移行する。  
 Github Pagesの公開用のリポジトリと、ソース用のリポジトリを分けて作成しているが、個人的にこの構成が好きだからで、特に深い意味はありません。
 
 #### 手順
@@ -22,8 +21,7 @@ Github Pagesの公開用のリポジトリと、ソース用のリポジトリ�
 
 #### Github Action
 
-Hugo公式の[Host on Github](https://gohugo.io/hosting-and-deployment/hosting-on-github/)を参考に作成する。
-
+Hugo公式の[Host on Github](https://gohugo.io/hosting-and-deployment/hosting-on-github/)を参考に作成する。  
 
 ```yaml
 
@@ -66,8 +64,7 @@ jobs:
           cname: whalem.net
 ```
 
-`paths`を設定することで、設定したパス(`pages/**`)に変更があった場合にGithub Actionが動くようになる。(参考: [GitHub Actionsのワークフロー構文](https://docs.github.com/ja/actions/reference/workflow-syntax-for-github-actions))
-
+`paths`を設定することで、設定したパス(`pages/**`)に変更があった場合にGithub Actionが動くようになる。(参考: [GitHub Actionsのワークフロー構文](https://docs.github.com/ja/actions/reference/workflow-syntax-for-github-actions))  
 また、ソース用のリポジトリに旧構成のバックアップがあるため、Build時にHugoのソースがあるディレクトリに`working-directory`で移動する。
 
 #### Reference
