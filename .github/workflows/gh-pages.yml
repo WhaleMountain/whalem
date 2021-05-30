@@ -31,4 +31,4 @@ jobs:
         with: 
           external_repository: WhaleMountain/WhaleMountain.github.io
           github_token: ${{ secrets.ACTIONS_PAGE_DEPLOY_KEY }}
-          publish_dir: ./public
+          publish_branch: main
