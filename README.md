@@ -1,3 +1,5 @@
+# [whalem.net](https://whalem.net)
+
 2021年5月にGithub Pagesに移行しました！
 
 ### Reference
