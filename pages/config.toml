@@ -1,4 +1,4 @@
-baseurl = "http://whalem.net/"
+baseurl = "https://whalem.net/"
 languageCode = "jp"
 title = "Whale Mountain"
 theme = "hugo-theme-yuki"
