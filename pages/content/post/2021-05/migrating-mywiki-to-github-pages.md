@@ -17,7 +17,7 @@ Github Pagesの公開用のリポジトリと、ソース用のリポジトリ�
 1. 1で作成したリポジトリにPushするために[Secret Key](https://docs.github.com/ja/actions/reference/encrypted-secrets#リポジトリの暗号化されたシークレットの作成)を設定する
 1. Github Actionを設定し終了
 
-※ 1, 3で設定したKeyはMacOS上で`ssh-keygen`で作成したKeyを設定する。1には公開鍵(`.pub`)、3には秘密鍵を設定する。
+※ 2, 4で設定したKeyはMacOS上で`ssh-keygen`で作成したKeyを設定する。1には公開鍵(`.pub`)、3には秘密鍵を設定する。
 
 #### Github Action
 
