@@ -20,7 +20,7 @@ enableRobotsTXT = true
   # The information will display on the post pages.
   author = "Whale Mountain"
   description = "Tofu on fire :)"
-  authorwebsite = "http://whalem.net/"
+  authorwebsite = "https://whalem.net/"
 
   # The path to your images
   favicon = "images/wm.png"
