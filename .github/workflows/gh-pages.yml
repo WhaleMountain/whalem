@@ -36,5 +36,5 @@ jobs:
           external_repository: WhaleMountain/WhaleMountain.github.io
           publish_branch: main
           publish_dir: ./pages/public
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          deploy_key: ${{ secrets.ACTIONS_PAGE_DEPLOY_KEY }}
           cname: whalem.net
