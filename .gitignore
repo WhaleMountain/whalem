@@ -4,3 +4,4 @@ certs
 data
 public
 resource
+.hugo_build.lock
