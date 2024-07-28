@@ -14,7 +14,7 @@ tags: ["2024-07", "GitHub Pages", "GitHub Actions", "Hugo"]
 GitHub Pages に移行したときの Hugo のバージョンは `0.83.0` だったけど、今は `0.129.0` になってた。  
 とりあえずビルドできるか確認したら、エラーが。。  
 
-```bash
+```shell
  parse failed: template: _default/list.html:4: function "sanitizeurl" not defined
 ```
 

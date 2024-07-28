@@ -8,7 +8,7 @@ tags: ["2021-03", "Docker", "docker-compose"]
 
 [公式ドキュメント](https://docs.docker.com/engine/install/debian/)に従っても良いが、インストール用のスクリプトがあるのでそれを使う。
 
-```sh
+```shell
 $ curl -fsSL https://get.docker.com -o install-docker.sh
 
 $ sh ./install-docker.sh
@@ -20,7 +20,7 @@ $ sh ./install-docker.sh
 
 docker-composeの[リポジトリ](https://github.com/docker/compose.git)のリリースにはarm用のバイナリはないので、ソースからビルドを行う。
 
-```sh
+```shell
 $ git clone https://github.com/docker/compose.git
 
 $ cd compose
@@ -32,7 +32,7 @@ $ ./script/build/linux
 
 しばし待つ。`dist`下にバイナリが吐かれていれば成功。あとは、`/usr/local/bin`にコピって終了。
 
-```sh
+```shell
 $ ls dist/
 docker-compose-linux-aarch64
 
