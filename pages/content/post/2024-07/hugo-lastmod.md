@@ -20,3 +20,7 @@ Hugo テーマのテンプレートを操作して `Edited on` を追加する�
 
 とりあえず設定されている `Date` と更新時間が違うなら表示する。あと無理やり `&ensp;` で幅を調整。  
 表示形式は [Format](https://gohugo.io/methods/time/format/) を参考にする。
+
+## 補足
+
+GitHub Actions でビルドして Lastmod を取得すると GitHub にプッシュした時間が取得されるので(多分)、必ず更新時間が表示されます。。。
