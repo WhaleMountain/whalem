@@ -17,7 +17,7 @@ Raspberry Pi から GitHub Pages に移行しました！
 ## 配信の流れ
 
 1. GitHubにプッシュする
-1. GitHub ActionでHugoビルドする
+1. GitHub ActionsでHugoビルドする
 1. GitHub Pagesで配信する
 1. 以上
 
