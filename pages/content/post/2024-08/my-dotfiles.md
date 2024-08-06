@@ -5,7 +5,7 @@ tags: ["2024-08", "dotfiles", "zsh"]
 ---
 
 利用している `dotfiles` のリポジトリは非公開にしているので、`dotfiles` の供養。   
-シェルは `zsh` を利用します。 
+シェルは `zsh`、ターミナルは MacOS のデフォルトのターミナルを利用します。 
 
 ### dotfiles
 
