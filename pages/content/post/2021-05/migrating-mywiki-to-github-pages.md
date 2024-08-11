@@ -23,8 +23,7 @@ GitHub Pagesの公開用のリポジトリと、ソース用のリポジトリ�
 
 Hugo公式の[Host on GitHub](https://gohugo.io/hosting-and-deployment/hosting-on-github/)を参考に作成する。  
 
-```yaml
-
+```
 name: github pages
 
 on:

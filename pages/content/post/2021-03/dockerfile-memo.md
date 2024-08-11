@@ -8,7 +8,7 @@ tags: ["2021-03", "Docker", "Dockerfile"]
 
 `apt install`時にインタラクティブな表示を無効にする。
 
-```dockerfile
+```
 RUN DEBIAN_FRONTEND=noninteractive \
     apt-get install -y
 ```
@@ -17,7 +17,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
 
 [Multi-Stage](https://docs.docker.com/develop/develop-images/multistage-build/)で`COPY`する時の指定の仕方。
 
-```dockerfile
+```
 FROM golang:rc-alpine3.12 AS build
 
 FROM alpine:3.12
