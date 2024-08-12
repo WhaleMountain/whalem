@@ -1,7 +1,7 @@
 ---
 title: "Highlight.jsのアップデート"
 date: 2024-08-12T19:38:41+09:00
-draft: true
+tags: ["2024-08", "Highlight.js", "Hugo"]
 ---
 
 下記コミットの内容についての記事です。
