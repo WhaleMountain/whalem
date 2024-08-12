@@ -11,6 +11,9 @@ paginate = 10
 enableGitInfo = true
 enableRobotsTXT = true
 
+[taxonomies]
+  tag = 'tags'
+
 [markup]
   [markup.highlight]
     codeFences = false
