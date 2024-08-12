@@ -11,6 +11,10 @@ paginate = 10
 enableGitInfo = true
 enableRobotsTXT = true
 
+[markup]
+  [markup.highlight]
+    codeFences = false
+
 # Theme config
 [params]
 

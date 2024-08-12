@@ -10,7 +10,7 @@ tags: ["2024-08", "dotfiles", "zsh"]
 ### dotfiles
 
 ホームディレクトリに `.dotfile` ディレクトリを作成して、以下のように設定ファイルを配置します。
-```shell
+```
 .dotfile
 ├── .zsh
 │   ├── [plugin] zsh-autosuggestions
