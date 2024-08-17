@@ -1,7 +1,6 @@
 ---
 title: "Raspberry Piの初期設定"
 date: 2024-08-17T16:07:50+09:00
-draft: true
 tags: ["2024-08", "Raspberry Pi"]
 ---
 
