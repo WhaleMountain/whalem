@@ -1,7 +1,7 @@
 ---
 title: Raspberry PiにDocker環境のインストール
 date: 2021-03-13T00:50:55+09:00
-tags: ["2021-03", "Docker", "docker-compose"]
+tags: ["2021-03", "Docker", "docker-compose", "Raspberry Pi"]
 ---
 
 ## Dockerのインストール
