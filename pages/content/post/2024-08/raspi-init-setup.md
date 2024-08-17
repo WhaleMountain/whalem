@@ -11,8 +11,7 @@ tags: ["2024-08", "Raspberry Pi"]
 ### SDカードにイメージを書き込む
 
 [Raspberry Pi Imager](https://www.raspberrypi.com/software/) を利用して microSDカードにイメージを書き込みます。  
-GUI は利用しないので Raspberry Pi OS (other) から lite を選択する。あとは初期ユーザー、SSHを有効にして書き込んで終わり。  
-簡単！！
+GUI は利用しないので Raspberry Pi OS (other) から lite を選択する。あとは初期ユーザー、SSHを有効にして書き込んで終わり。簡単！！
 
 ### sudoの初期設定
 
