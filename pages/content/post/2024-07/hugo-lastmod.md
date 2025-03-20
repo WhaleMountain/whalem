@@ -14,11 +14,11 @@ tags: ["2024-07", "Hugo"]
 Hugo テーマのテンプレートを操作して `Edited on` を追加する。  
 ```html
 {{ if ne .Date .Lastmod }}
-    Edited on &ensp;&ensp;&ensp;&ensp;{{ .Lastmod.Format "2006.01.02 15:04" }}
+    Edited on {{ .Lastmod.Format "2006.01.02 15:04" }}
 {{ end }}
 ```
 
-とりあえず設定されている `Date` と更新時間が違うなら表示する。あと無理やり `&ensp;` で幅を調整。  
+とりあえず設定されている `Date` と更新時間が違うなら表示する。~~あと無理やり `&ensp;` で幅を調整。~~  
 表示形式は [Format](https://gohugo.io/methods/time/format/) を参考にする。
 
 ## 補足
