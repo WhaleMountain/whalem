@@ -3,14 +3,14 @@ languageCode = "jp"
 title = "Whale Mountain"
 theme = "hugo-theme-yuki"
 author = "Whale Mountain"
+enableGitInfo = true
+enableRobotsTXT = true
 
 # Copyright notice. This will display on the footer.
 copyright = "© 2021 Whale Mountain. Theme yuki. Powered by Hugo."
+
 [pagination]
   pagerSize = 10
-
-enableGitInfo = true
-enableRobotsTXT = true
 
 [taxonomies]
   tag = 'tags'
