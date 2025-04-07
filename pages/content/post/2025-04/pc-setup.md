@@ -51,13 +51,15 @@ Microsoftのページに従ってPowerShellからインストール。デフォ�
 wsl --install
 ```
 
-### Rancher Desktop
+### ~~Rancher Desktop~~ Docker Desktop
 
-Docker Desktopでもいいが、使ったことがなかったのでRancher Desktopを導入しました。
+Docker Desktopでもいいが、~~使ったことがなかったのでRancher Desktopを導入しました。~~
 * [Installing Rancher Desktop on Windows](https://docs.rancherdesktop.io/getting-started/installation/#installing-rancher-desktop-on-windows)
 
 公式サイトに従ってインストール後、起動し `Preferences > WSL > Ubuntu` にチェックを入れ `Apply` で反映する。  
-あとはWSL2のUbuntuから`docker`コマンドを使用できる。特に設定もなく`docker compose`も利用でき、今のところ不便はなさそう。
+~~あとはWSL2のUbuntuから`docker`コマンドを使用できる。特に設定もなく`docker compose`も利用でき、今のところ不便はなさそう。~~
+
+はやりのMCPサーバをRancher Desktopで動かしたところClaude Desktopからアクセスできなかったので、Docker Desktopに変更しました。。。
 
 ### Go
 
