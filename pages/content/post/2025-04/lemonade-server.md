@@ -40,6 +40,13 @@ models:
     model: Qwen-1.5-7B-Chat-Hybrid 
     apiBase: http://localhost:8000/api/v0
     apiKey: none
+  - name: Lemonade Autocomplete Model
+    provider: openai
+    model: Qwen-1.5-7B-Chat-Hybrid
+    apiBase: http://localhost:8000/api/v0
+    apiKey: none
+    roles:
+      - autocomplete
 ```
 
 後は model 選択のプルダウンメニューから Lemonade を選べるようになっています。  
