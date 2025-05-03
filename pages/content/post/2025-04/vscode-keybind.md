@@ -1,5 +1,5 @@
 ---
-title: "Vscodeのキーバインド"
+title: "VS Codeのキーバインド"
 date: 2025-04-29T14:20:57+09:00
 tags: ["2025-04", "Windows", "VS Code"]
 ---
