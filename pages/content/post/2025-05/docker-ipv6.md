@@ -4,7 +4,7 @@ date: 2025-05-05T00:04:44+09:00
 tags: ["2025-05", "Docker"]
 ---
 
-Raspberry Piに[AdGuard Homeの導入](../2025-02/adgurd-home-setup.md)を導入したが、IPv6のDNSを利用できなかったのでDockerのIPv6サポートを有効にする。
+Raspberry Piに[AdGuard Homeの導入](/post/2025-02/adgurd-home-setup/)を導入したが、IPv6のDNSを利用できなかったのでDockerのIPv6サポートを有効にする。
 
 ### IPv6サポートの有効化
 
