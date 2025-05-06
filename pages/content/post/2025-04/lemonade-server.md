@@ -24,7 +24,33 @@ GitHub の Releases からインストーラーをダウンロードしてイン
 ダウンロードしたモデル一覧は下記にアクセスすると取得できました。
 * http://localhost:8000/api/v0/models 
 
-追加でモデルダウンロードしたい時はどこからだろう...？
+~~追加でモデルダウンロードしたい時はどこからだろう...？~~
+
+### モデルの追加
+
+lemonade-server をインストール後に `~/AppData/Local/lemonade_server/bin` に `lemonade-server.bat` が追加されています。
+* コマンド一覧 (v6.2.2)
+```shell
+$ lemonade-server.bat --help
+Serve LLMs on CPU, GPU, and NPU.
+
+options:
+  -h, --help     show this help message and exit
+  -v, --version  Show version number
+
+Available Commands:
+
+    serve        Start server
+    status       Check if server is running
+    stop         Stop the server
+    pull         Install an LLM
+```
+
+[Lemonade Server Models](https://github.com/onnx/turnkeyml/blob/main/docs/lemonade/server_models.md) から使いたいモデルを確認して追加できます。
+
+```shell
+$ lemonade-server.bat pull Qwen-1.5-7B-Chat-Hybrid
+```
 
 ## Continueから使用する
 
