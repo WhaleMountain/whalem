@@ -4,7 +4,7 @@ date: 2025-04-20T19:50:50+09:00
 tags: ["2025-04", "Windows", "lemonade-server"]
 ---
 
-新しく購入した PC の CPU である AMD Ryzen AI 9 HX 370 には NPU を使用するために [Lemonade Server](https://github.com/onnx/turnkeyml) を導入した時のメモです。
+新しく購入した PC の CPU である AMD Ryzen AI 9 HX 370 には NPU を使用するために [Lemonade Server](https://github.com/lemonade-sdk/lemonade) を導入した時のメモです。
 
 ## Lemonade Server
 最近 AMD から [GAIA](https://github.com/amd/gaia) という OSS で AMD Ryzen AI プロセッサの NPU を利用して生成 AI を動かせそうでした。  
@@ -12,7 +12,7 @@ tags: ["2025-04", "Windows", "lemonade-server"]
 
 ### インストール
 GitHub の Releases からインストーラーをダウンロードしてインストールするだけです。
-* https://github.com/onnx/turnkeyml/releases
+* https://github.com/lemonade-sdk/lemonade/releases
 
 インストール時にダウンロードするモデルも選択できました。NPU に対応した Hybrid のモデルがダウンロードできます。  
 現在用意されているモデルは Huggingface で確認できます。
@@ -46,7 +46,7 @@ Available Commands:
     pull         Install an LLM
 ```
 
-[Lemonade Server Models](https://github.com/onnx/turnkeyml/blob/main/docs/lemonade/server_models.md) から使いたいモデルを確認して追加できます。
+[Lemonade Server Models](https://github.com/lemonade-sdk/lemonade/blob/main/docs/server/server_models.md) から使いたいモデルを確認して追加できます。
 
 ```shell
 $ lemonade-server.bat pull Qwen-1.5-7B-Chat-Hybrid
@@ -56,7 +56,7 @@ $ lemonade-server.bat pull Qwen-1.5-7B-Chat-Hybrid
 
 連携アプリの例にあった [Continue](https://www.continue.dev/) から今回利用してみます。
 流れは GitHub の examples の通りです。
-* [Continue Coding Assistant](https://github.com/onnx/turnkeyml/blob/main/examples/lemonade/server/continue.md)
+* [Continue Coding Assistant](https://github.com/lemonade-sdk/lemonade/blob/main/docs/server/apps/continue.md)
 
 Add Chat Model から Connect ボタンの下にある config file から models を以下のように変更して保存します。
 ```yaml
